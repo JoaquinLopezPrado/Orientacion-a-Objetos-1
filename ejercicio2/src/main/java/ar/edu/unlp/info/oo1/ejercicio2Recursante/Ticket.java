@@ -16,6 +16,7 @@ public class Ticket {
 		this.pesoTotal=peso;
 		this.precioTotal=precio;
 	}
+	
 	public double impuesto() {
 		return this.precioTotal * 0.21;
 	}
