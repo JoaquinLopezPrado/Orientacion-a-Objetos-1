@@ -23,5 +23,16 @@ public abstract class Pieza {
 		this.color = color;
 	}
 	
-
+	public boolean esIgualMaterial(String material) {
+		if(this.getMaterial().equals(material)) {
+			return true;
+		}
+		else return false;
+	}
+	public boolean esIgualColor(String Color) {
+		if(this.getColor().equals(Color)) {
+			return true;
+		}
+		else return false;
+	}
 }

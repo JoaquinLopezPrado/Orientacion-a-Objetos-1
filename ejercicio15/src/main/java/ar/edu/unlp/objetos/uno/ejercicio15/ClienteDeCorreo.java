@@ -13,8 +13,8 @@ public class ClienteDeCorreo {
 	}
 	
 	public Email buscar(String texto) {
-		return listaCarpetas.stream().flatMap(p -> p.getEmails().stream()).filter(c -> c.getTitulo().contains(texto) || c.getCuerpo().contains(texto)).findFirst().orElse(null);
-		
+		/*cambiar*/
+		return null;
 	}
 	
 	public double espacioOcupado() {

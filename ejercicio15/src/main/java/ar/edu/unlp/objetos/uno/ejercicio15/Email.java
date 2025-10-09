@@ -26,4 +26,11 @@ public class Email {
 		return adjuntos.stream().mapToDouble(adjuntos -> adjuntos.tamaño()).sum() + this.getCuerpo().length() + this.getTitulo().length();
 	}
 
+	public boolean BuscarEnTexto(String texto) {
+		if(this.getCuerpo().contains(texto) || this.getTitulo().contains(texto)) {
+			return true;
+		}
+		else return false;
+		
+	}
 }
