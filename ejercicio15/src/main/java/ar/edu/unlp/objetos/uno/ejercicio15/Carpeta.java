@@ -29,5 +29,9 @@ public class Carpeta {
 	public double tamañoMails() {
 		return emails.stream().mapToDouble(emails -> emails.tamaño()).sum();
 	}
+	
+	public Email Existe(String texto) {
+		return emails.stream().filter(c -> c.BuscarEnTexto(texto)).findFirst().get();
+	}
 
 }

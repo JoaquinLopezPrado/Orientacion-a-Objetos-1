@@ -13,8 +13,7 @@ public class ClienteDeCorreo {
 	}
 	
 	public Email buscar(String texto) {
-		/*cambiar*/
-		return null;
+		return (Email) listaCarpetas.stream().map(c -> c.Existe(texto));
 	}
 	
 	public double espacioOcupado() {
