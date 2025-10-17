@@ -43,7 +43,7 @@ public class Propiedad {
 	}
 	
 	public double cancelarReserva() {
-		
+		/*preg*/
 	}
 	
 	public double CalculoReservas(DataL periodo) {

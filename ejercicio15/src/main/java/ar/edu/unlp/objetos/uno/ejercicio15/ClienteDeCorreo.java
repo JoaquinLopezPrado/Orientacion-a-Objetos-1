@@ -13,7 +13,7 @@ public class ClienteDeCorreo {
 	}
 	
 	public Email buscar(String texto) {
-		return (Email) listaCarpetas.stream().map(c -> c.Existe(texto));
+		return listaCarpetas.stream().findFirst().map(c -> c.Existe(texto)).orElse(null);/*porque aca un findfirst? si devuelve un solo mail*/
 	}
 	
 	public double espacioOcupado() {

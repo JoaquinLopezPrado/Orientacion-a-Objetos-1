@@ -31,7 +31,7 @@ public class Carpeta {
 	}
 	
 	public Email Existe(String texto) {
-		return emails.stream().filter(c -> c.BuscarEnTexto(texto)).findFirst().get();
+		return emails.stream().filter(c -> c.BuscarEnTexto(texto)).findFirst().orElse(null);
 	}
 
 }
